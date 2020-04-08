@@ -33,6 +33,8 @@ We need a model which output y_hat from the truth table above given the input x 
 Our perceptron model f(x) can be defined as
 
 ![f(x) =x_i\cdot  w_i + b ](https://render.githubusercontent.com/render/math?math=f(x)%20%3Dx_i%5Ccdot%20%20w_i%20%2B%20b%20)
+![basic perceptron](/images/e1.png)
+
 
 As we see f(x) is a simple dot product of input x_i with its wight w_i with added bias. This modeling of perceptron is well explain with forward and backward propogation which we will discuss below. 
 
@@ -64,6 +66,7 @@ Forward Propogation is a two step process.
 First, in each epoc, the sum of the products of the weights and the inputs is calculated at that node. Simply put.
 
 ![f_p = \sum_{n=0}^{i} x_i.w_i + \vec{b} ](https://render.githubusercontent.com/render/math?math=f_p%20%3D%20%5Csum_%7Bn%3D0%7D%5E%7Bi%7D%20x_i.w_i%20%2B%20%5Cvec%7Bb%7D%20)
+![Activation](/images/e2.png)
 
 
 #### 4.3.1 Activation Transfer
@@ -73,6 +76,8 @@ in many literation  ![\sigma](https://render.githubusercontent.com/render/math?m
 We use sigmoid activation funtion which can be defines as:
 
 ![\sigma(x) = \frac{\mathrm{1}}{\mathrm{1} + e^{-x}} ](https://render.githubusercontent.com/render/math?math=%5Csigma(x)%20%3D%20%5Cfrac%7B%5Cmathrm%7B1%7D%7D%7B%5Cmathrm%7B1%7D%20%2B%20e%5E%7B-x%7D%7D%20)
+![Sigmoid Activation](/images/e3.png)
+
 
 In python we can discribe these as below, where y_hat denotes the ouptut:
 
@@ -90,6 +95,7 @@ In Backpropagation a very import step is computing weight.
 In order to compute weight you need to have a loss term which says how good your model is perfoeming. This loss function can be as simple as a distance vector between them or a arthematic difference. 
 ![L = y - \hat{y}](https://render.githubusercontent.com/render/math?math=L%20%3D%20y%20-%20%5Chat%7By%7D)
 
+![Loss](/images/e4.png)
 
 
 ### 4.3 Backpropagation

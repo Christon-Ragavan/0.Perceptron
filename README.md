@@ -29,6 +29,8 @@ The truth table below shows that the output of an Exclusive-OR gate ONLY goes â€
 ## 1. Forward Propogation 
 ![f(x) =  \frac{\mathrm{1} }{\mathrm{1} + e^{-x} } ](https://render.githubusercontent.com/render/math?math=f(x)%20%3D%20%20%5Cfrac%7B%5Cmathrm%7B1%7D%20%7D%7B%5Cmathrm%7B1%7D%20%2B%20e%5E%7B-x%7D%20%7D%20)
 
+![\sigma(x) =  \frac{\mathrm{1} }{\mathrm{1} + e^{-x} } ](https://render.githubusercontent.com/render/math?math=%5Csigma(x)%20%3D%20%20%5Cfrac%7B%5Cmathrm%7B1%7D%20%7D%7B%5Cmathrm%7B1%7D%20%2B%20e%5E%7B-x%7D%20%7D%20)
+
 ```math
 a + b = c
 ```

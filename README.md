@@ -76,15 +76,10 @@ We use sigmoid activation funtion which can be defines as:
 In python we can discribe these as below, where y_hat denotes the ouptut:
 
 ```python
-import numpy as np
 
 def sigmoid(x):
   return 1 / (1 + np.exp(-x))
-x = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-y = np.array([[0, 1, 1, 0]]).T
-assert np.shape(x)[0] == np.shape(y)[0]
-w = 2 * np.random.random((np.shape(x)[1], 1))-1
-b = 1
+
 y_hat = sigmoid((np.dot(layer_1, w) + b))
 ```
 

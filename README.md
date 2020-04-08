@@ -31,6 +31,7 @@ The truth table below shows that the output of an Exclusive-OR gate ONLY goes â€
 
 We need a model which output y_hat from the truth table above given the input x and its traning labels y. 
 Our perceptron model f(x) can be defined as
+
 ![f(x) =x_i\cdot  w_i + b ](https://render.githubusercontent.com/render/math?math=f(x)%20%3Dx_i%5Ccdot%20%20w_i%20%2B%20b%20)
 
 As we see f(x) is a simple dot product of input x_i with its wight w_i with added bias. This modeling of perceptron is well explain with forward and backward propogation which we will discuss below. 
@@ -46,12 +47,22 @@ assert np.shape(x)[0] == np.shape(y)[0]
 
 
 ### 4.1 Forward Propogation
-In each epoc, the sum of the products of the weights and the inputs is calculated at that node. Simply put.
+Forward Propogation is a two step process.
+#### 4.1.1 Activation
+First, in each epoc, the sum of the products of the weights and the inputs is calculated at that node. Simply put.
 
+![f_p = \sum_{n=0}^{i} x_i.w_i + \vec{b} ](https://render.githubusercontent.com/render/math?math=f_p%20%3D%20%5Csum_%7Bn%3D0%7D%5E%7Bi%7D%20x_i.w_i%20%2B%20%5Cvec%7Bb%7D%20)
+
+#### 4.1.1 Activation Transfer
+
+Followed by this we need an activation function ![\sigma](https://render.githubusercontent.com/render/math?math=%5Csigma). Itâ€™s just a thing function that you use to get the output of node. It is also known as Transfer Function. It is used to determine the output of neural network like yes or no. It maps the resulting values in between 0 to 1 or -1 to 1 etc. (depending upon the function).
+in many literation  ![\sigma](https://render.githubusercontent.com/render/math?math=%5Csigma) is often refereed as activation function which performs  ![\sigma(f_p)](https://render.githubusercontent.com/render/math?math=%5Csigma(f_p)). 
+We use sigmoid activation funtion which can be defines as:
+
+![\sigma(x) = \frac{\mathrm{1}}{\mathrm{1} + e^{-x}} ](https://render.githubusercontent.com/render/math?math=%5Csigma(x)%20%3D%20%5Cfrac%7B%5Cmathrm%7B1%7D%7D%7B%5Cmathrm%7B1%7D%20%2B%20e%5E%7B-x%7D%7D%20)
 
 ### 4.1 Activation
 
-![f(x) =  \frac{\mathrm{1} }{\mathrm{1} + e^{-x} } ](https://render.githubusercontent.com/render/math?math=f(x)%20%3D%20%20%5Cfrac%7B%5Cmathrm%7B1%7D%20%7D%7B%5Cmathrm%7B1%7D%20%2B%20e%5E%7B-x%7D%20%7D%20)
 
 ![\sigma(x) =  \frac{\mathrm{1} }{\mathrm{1} + e^{-x} } ](https://render.githubusercontent.com/render/math?math=%5Csigma(x)%20%3D%20%20%5Cfrac%7B%5Cmathrm%7B1%7D%20%7D%7B%5Cmathrm%7B1%7D%20%2B%20e%5E%7B-x%7D%20%7D%20)
 

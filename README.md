@@ -49,9 +49,10 @@ assert np.shape(x)[0] == np.shape(y)[0]
 #### 4.2.1 Weights
  A weight w represent the strength of the connection between units. If the weight from node 1 to node 2 has greater magnitude, it means that neuron 1 has greater influence over neuron 2. A weight brings down the importance of the input value
 for our example we can set initialize our weights as
-´´´python
+
+```python
 w = 2 * np.random.random((np.shape(x)[1], 1))-1
-´´´
+```
 
 #### 4.2.1 Bias
 Bias b is like the intercept added in a linear equation. it is a vector. It is an additional parameter in the Neural Network which is used to adjust the output along with the weighted sum of the inputs to the neuron. Thus, Bias is a constant which helps the model in a way that it can fit best for the given data.

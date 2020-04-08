@@ -23,9 +23,5 @@ for i in range(100000):
     w += np.dot(x.T, weight_updates)
     b += np.dot(lr,error)
 
-
-print(w, np.shape(w))
-print(b, np.shape)
+print("--Output--")
 print(y_hat)
-test = np.array([[1,0], [0,0], [1,0], [0,0]])
-ne = sigmoid((np.dot(test, w) +b))

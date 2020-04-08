@@ -18,7 +18,7 @@ Hence we will use a simple neural network implemented in numpy to undercover the
 The simplest form of perceptron contains one node. The sum of the products of the weights and the inputs is calculated at that node. It is a linear classifier.
 One such example is shown as below in the fig
 
-![Perceptron](/images/perceptron_1.png)
+![Perceptron](/images/perceptron_2.png)
 
 
 

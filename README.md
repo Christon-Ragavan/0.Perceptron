@@ -32,7 +32,7 @@ The truth table below shows that the output of an Exclusive-OR gate ONLY goes â€
 We need a model which output y_hat from the truth table above given the input x and its traning labels y. 
 Our perceptron model f(x) can be defined as
 
-![f(x) =x_i\cdot  w_i + b ](https://render.githubusercontent.com/render/math?math=f(x)%20%3Dx_i%5Ccdot%20%20w_i%20%2B%20b%20)
+
 ![basic perceptron](/images/e1.png)
 
 
@@ -65,7 +65,7 @@ Forward Propogation is a two step process.
 #### 4.3.1 Activation
 First, in each epoc, the sum of the products of the weights and the inputs is calculated at that node. Simply put.
 
-![f_p = \sum_{n=0}^{i} x_i.w_i + \vec{b} ](https://render.githubusercontent.com/render/math?math=f_p%20%3D%20%5Csum_%7Bn%3D0%7D%5E%7Bi%7D%20x_i.w_i%20%2B%20%5Cvec%7Bb%7D%20)
+
 ![Activation](/images/e2.png)
 
 
@@ -75,7 +75,7 @@ Followed by this we need an activation function ![\sigma](https://render.githubu
 in many literation  ![\sigma](https://render.githubusercontent.com/render/math?math=%5Csigma) is often refereed as activation function which performs  ![\sigma(f_p)](https://render.githubusercontent.com/render/math?math=%5Csigma(f_p)). 
 We use sigmoid activation funtion which can be defines as:
 
-![\sigma(x) = \frac{\mathrm{1}}{\mathrm{1} + e^{-x}} ](https://render.githubusercontent.com/render/math?math=%5Csigma(x)%20%3D%20%5Cfrac%7B%5Cmathrm%7B1%7D%7D%7B%5Cmathrm%7B1%7D%20%2B%20e%5E%7B-x%7D%7D%20)
+
 ![Sigmoid Activation](/images/e3.png)
 
 
@@ -93,7 +93,6 @@ In Backpropagation a very import step is computing weight.
 
 #### 4.3.1 Compute Weights
 In order to compute weight you need to have a loss term which says how good your model is perfoeming. This loss function can be as simple as a distance vector between them or a arthematic difference. 
-![L = y - \hat{y}](https://render.githubusercontent.com/render/math?math=L%20%3D%20y%20-%20%5Chat%7By%7D)
 
 ![Loss](/images/e4.png)
 
@@ -102,7 +101,6 @@ In order to compute weight you need to have a loss term which says how good your
 Backpropagation in other words weight update.
 Backpropagation  is a widely used algorithm in training feedforward neural networks for supervised learning. In fitting a neural network, backpropagation computes the gradient of the loss function with respect to the weights of the network for a single inputâ€“output example, and does so efficiently, unlike a naive direct computation of the gradient with respect to each weight individually. 
 
-![\frac{\partial \sigma }{\partial x} ](https://render.githubusercontent.com/render/math?math=%5Cfrac%7B%5Cpartial%20%5Csigma%20%7D%7B%5Cpartial%20x%7D%20)
 ![Derivated Sigmoid](/images/e5.png)
 
 Hence we can compute and updates weights by dot product of learning rate, error and 

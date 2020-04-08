@@ -3,9 +3,8 @@
 The main motivation is to undetstand the nuts and bolts of a simple working neural network. 
 Hence we will use a simple neural network implemented in numpy to undercover the details. We will model a simple EX-OR gate in a neural network fashion.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Bais
+Due to absence of bias, model will train over point passing through origin only, which is not in accordance with real-world scenario. Also with the introduction of bias, the model will become more flexible.
 
 ```markdown
 Syntax highlighted code block

@@ -21,7 +21,10 @@ One such example is shown as below in the fig
 
 
 
-### 3.2 EXOR gate 
+### 3.2 XOR gate 
+The truth table below shows that the output of an Exclusive-OR gate ONLY goes “HIGH” when both of its two input terminals are at “DIFFERENT” logic levels with respect to each other. If these two inputs, A and B are both at logic level “1” or both at logic level “0” the output is a “0” making the gate an “odd but not the even gate”. In other words, the output is “1” when there are an odd number of 1’s in the inputs.
+![XOR Gate](/images/xor_gate.jpg)
+
 
 ### Bais
 #### 1. Forward Propogation 

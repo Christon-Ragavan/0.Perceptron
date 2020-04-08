@@ -1,8 +1,7 @@
-## Welcome to GitHub Pages
+## Motivation
 
-You can use the [editor on GitHub](https://github.com/Christon-Ragavan/Neural-Network-in-Numpy/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The main motivation is to undetstand the nuts and bolts of a simple working neural network. 
+Hence we will use a simple neural network implemented in numpy to undercover the details. We will model a simple EX-OR gate in a neural network fashion.
 
 ### Markdown
 

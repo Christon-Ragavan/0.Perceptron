@@ -103,6 +103,7 @@ Backpropagation in other words weight update.
 Backpropagation  is a widely used algorithm in training feedforward neural networks for supervised learning. In fitting a neural network, backpropagation computes the gradient of the loss function with respect to the weights of the network for a single input–output example, and does so efficiently, unlike a naive direct computation of the gradient with respect to each weight individually. 
 
 ![\frac{\partial \sigma }{\partial x} ](https://render.githubusercontent.com/render/math?math=%5Cfrac%7B%5Cpartial%20%5Csigma%20%7D%7B%5Cpartial%20x%7D%20)
+![Derivated Sigmoid](/images/e5.png)
 
 Hence we can compute and updates weights by dot product of learning rate, error and 
 ![\frac{\partial \sigma }{\partial x} ](https://render.githubusercontent.com/render/math?math=%5Cfrac%7B%5Cpartial%20%5Csigma%20%7D%7B%5Cpartial%20x%7D%20)

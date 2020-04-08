@@ -3,6 +3,15 @@
 The main motivation is to undetstand the nuts and bolts of a simple working neural network. 
 Hence we will use a simple neural network implemented in numpy to undercover the details. We will model a simple EX-OR gate in a neural network fashion.
 
+## Topics Covered
+
+1. Forward Propogation (or) training (or) weight calculation
+2. Backward Propogation (or) weight updates
+3. Loss
+4. Weights
+5. Bias
+6. Activation Function
+
 ### Bais
 Due to absence of bias, model will train over point passing through origin only, which is not in accordance with real-world scenario. Also with the introduction of bias, the model will become more flexible.
 

@@ -89,6 +89,7 @@ y_hat = sigmoid((np.dot(layer_1, w) + b))
 ```
 
 In Backpropagation a very import step is computing weight. 
+
 #### 4.3.1 Compute Weights
 In order to compute weight you need to have a loss term which says how good your model is perfoeming. This loss function can be as simple as a distance vector between them or a arthematic difference. 
 ![L = y - \hat{y}](https://render.githubusercontent.com/render/math?math=L%20%3D%20y%20-%20%5Chat%7By%7D)
@@ -96,9 +97,24 @@ In order to compute weight you need to have a loss term which says how good your
 
 
 ### 4.3 Backpropagation
-Backpropagation  is a widely used algorithm in training feedforward neural networks for supervised learning. Generalizations of backpropagation exist for other artificial neural networks (ANNs), and for functions generally – a class of algorithms referred to generically as "backpropagation". In fitting a neural network, backpropagation computes the gradient of the loss function with respect to the weights of the network for a single input–output example, and does so efficiently, unlike a naive direct computation of the gradient with respect to each weight individually. 
+Backpropagation in other words weight update.
+Backpropagation  is a widely used algorithm in training feedforward neural networks for supervised learning. In fitting a neural network, backpropagation computes the gradient of the loss function with respect to the weights of the network for a single input–output example, and does so efficiently, unlike a naive direct computation of the gradient with respect to each weight individually. 
 
-In Backpropagation a very import step is 
+![\frac{\partial \sigma }{\partial x} ](https://render.githubusercontent.com/render/math?math=%5Cfrac%7B%5Cpartial%20%5Csigma%20%7D%7B%5Cpartial%20x%7D%20)
+
+Hence we can compute and updates weights by dot product of learning rate, error and 
+![\frac{\partial \sigma }{\partial x} ](https://render.githubusercontent.com/render/math?math=%5Cfrac%7B%5Cpartial%20%5Csigma%20%7D%7B%5Cpartial%20x%7D%20)
+
+
+```python
+def derivated_sigmoid(x):
+    return x*(1-x)
+    weight_updates = lr*error*derivated_sigmoid(y_hat)
+
+```
+
+
+## 5. Code
 
 
 ```python
